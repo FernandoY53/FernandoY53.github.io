@@ -4,8 +4,12 @@ for ( var i = 0; i < 10; i ++ ) {
 }
 var geometry = new THREE.LatheGeometry( points );
 var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
-var lathe = new THREE.Mesh( geometry, material );
-scene.add( lathe );
+
+var malla = new THREE.Mesh( geometry, material );
+malla.rotateX(Math.PI/6);
+
+var scene=new THREE.Scene();
+scene.add( malla);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 5;
