@@ -8,7 +8,7 @@ var geometry = new THREE.LatheGeometry( points );
 var material = new THREE.MeshBasicMaterial( { color: 0xffff00 });
 
 var malla = new THREE.Mesh( geometry, material );
-//malla.rotateX(Math.PI/6);
+malla.rotateX(Math.PI/6);
 
 var escena=new THREE.Scene();
 escena.add( malla);
