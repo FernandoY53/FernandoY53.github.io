@@ -10,8 +10,8 @@ var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( geometry, material );
 //malla.rotateX(Math.PI/6);
 
-var scene=new THREE.Scene();
-scene.add( malla);
+var escena=new THREE.Scene();
+escena.add( malla);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 10;
@@ -20,4 +20,4 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, 
                       window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
-renderizador.render( scene, camara );
+renderizador.render(escena, camara);
