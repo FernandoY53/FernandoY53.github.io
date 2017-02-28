@@ -5,7 +5,7 @@ for ( var i = 0; i < 10; i ++ ) {
 }
 
 var geometry = new THREE.LatheGeometry( points );
-var material = new THREE.MeshBasicMaterial( { color: 0xffff00 });
+var material = new THREE.MeshNormalMaterial();
 
 var malla = new THREE.Mesh( geometry, material );
 malla.rotateX(Math.PI/6);
