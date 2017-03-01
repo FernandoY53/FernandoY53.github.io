@@ -8,13 +8,13 @@ var geometry = new THREE.LatheGeometry( points );
 var material = new THREE.MeshNormalMaterial();
 
 var malla = new THREE.Mesh( geometry, material );
-malla.rotateX(Math.PI/2);
+malla.rotateX(Math.PI/4);
 
 var escena=new THREE.Scene();
 escena.add( malla);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 700;
+camara.position.z = 400;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, 
