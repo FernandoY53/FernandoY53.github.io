@@ -54,3 +54,22 @@ escena.add(camara);
 
 // Renderizamos la escena
 lienzo.render(escena, camara);
+
+// Creamos una par de focos de luz
+var luz1 = new THREE.PointLight(0xff0044); // Rojizo
+luz1.position.set(
+    120, // Posición en eje X
+    260, // Posición en eje Y
+    100 // Posición en eje Z
+);
+  
+var luz2 = new THREE.PointLight(0x4499ff); // Azulado
+luz2.position.set(
+    -100, // Posición en eje X
+    100, // Posición en eje Y
+    200 // Posición en eje Z
+);
+  
+// Añadimos las luces
+escena.add(luz1);
+escena.add(luz2);
