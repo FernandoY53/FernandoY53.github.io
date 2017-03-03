@@ -5,7 +5,7 @@ var figura = new THREE.Shape();
 
 figura.acrTo(0,30,10,40,10);
 
-var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
+var forma = new THREE.LatheGeometry(figura);
 
 
 var material = new THREE.MeshNormalMaterial();
