@@ -3,7 +3,7 @@ var figura = new THREE.Shape();
 //figura.moveTo(20, 20);
 //figura.lineTo(20, 10);
 
-figura.arc(60,60,50,0,2*Math.PI);
+figura.arc(10,10,50,0,2*Math.PI);
 
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
