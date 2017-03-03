@@ -1,6 +1,6 @@
 var figura = new THREE.Shape();
 
-figura.moveTo(30, 30);
+figura.moveTo(20, 20);
 figura.lineTo(20, 10);
 figura.lineTo(30, 18);
 figura.lineTo(40, 10);
@@ -11,7 +11,7 @@ figura.lineTo(40, 40);
 figura.lineTo(30, 42);
 figura.lineTo(20, 40);
 figura.lineTo(20, 30);
-figura.lineTo(10, 25);
+figura.lineTo(20, 25);
 
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
