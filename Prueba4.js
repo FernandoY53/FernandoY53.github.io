@@ -3,7 +3,9 @@ var figura = new THREE.Shape();
 //figura.moveTo(20, 20);
 //figura.lineTo(20, 10);
 
-figura.acrTo(0,30,10,40,10);
+figura.lineTo(100,20);          // Create a horizontal line
+figura.arcTo(150,20,150,70,50); // Create an arc
+figura.lineTo(150,120);  
 
 var forma = new THREE.LatheGeometry(figura);
 
