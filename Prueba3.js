@@ -1,6 +1,6 @@
 var figura = new THREE.Shape();
 
-figura.moveTo(20, 20);
+figura.moveTo(30, 30);
 figura.lineTo(20, 10);
 figura.lineTo(30, 15);
 figura.lineTo(40, 10);
@@ -18,7 +18,7 @@ var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-malla.rotateY( Math.PI/4 );
+malla.rotateY( Math.PI/3);
 
 var escena = new THREE.Scene();
 escena.add(malla);
