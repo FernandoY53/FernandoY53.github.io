@@ -1,12 +1,12 @@
 var figura = new THREE.Shape();
 
-figura.moveTo(10, 10);
-figura.lineTo(10, 10);
-figura.lineTo(30, 10);
-figura.lineTo(35, 15);
-figura.lineTo(30, 30);
-figura.lineTo(10, 30);
-figura.lineTo(5, 15);
+//figura.moveTo(10, 10);
+figura.lineTo(0, 3);
+figura.lineTo(2.6, 1.5);
+figura.lineTo(2.6, 1.5);
+figura.lineTo(0, -3);
+figura.lineTo(-2.6, -1.5);
+figura.lineTo(-2.6, 1.5);
 
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
@@ -18,7 +18,7 @@ var escena = new THREE.Scene();
 escena.add(malla);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 200;
+camara.position.x = 200;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
