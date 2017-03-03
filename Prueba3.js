@@ -8,7 +8,7 @@ figura.lineTo(40, 20);
 figura.lineTo(50, 25);
 figura.lineTo(40, 30);
 figura.lineTo(40, 40);
-figura.lineTo(30, 42);
+figura.lineTo(30, 32);
 figura.lineTo(20, 40);
 figura.lineTo(20, 30);
 figura.lineTo(10, 25);
