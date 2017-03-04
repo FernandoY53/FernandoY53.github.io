@@ -1,13 +1,12 @@
 var figura = new THREE.Shape();
 
-//figura.moveTo(10, 10);
+figura.moveTo(0, 0);
 figura.lineTo(0, 3);          //A
 figura.lineTo(2.6, 1.5);      //B
 figura.lineTo(2.6, -1.5);     //C
 figura.lineTo(0, -3);         //D
 figura.lineTo(-2.6, -1.5);    //E
 figura.lineTo(-2.6, 1.5);     //F
-figura.lineTo(0, 3);     //F
 
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
