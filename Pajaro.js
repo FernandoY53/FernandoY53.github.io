@@ -10,7 +10,11 @@ var material1 = new THREE.MeshLambertMaterial({color: 0xFA8815});
 var malla1 = new THREE.Mesh( forma1, material1 );
 
 malla1.rotateY( Math.PI/6);
+var escena1 = new THREE.Scene();
+escena1.add(malla1);
 
+var camara1 = new THREE.PerspectiveCamera();
+camara1.position.z = 200;
 
 //CUERPO
 var figura = new THREE.Shape();
