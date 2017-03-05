@@ -3,7 +3,7 @@ ctx.arc(0,0,1.5,0,2*Math.PI);
 var forma1 = new THREE.ExtrudeGeometry(ctx,{amount: 20} );
 var material1 = new THREE.MeshNormalMaterial();
 var malla1 = new THREE.Mesh( forma1, material1 );
-malla1.rotateX( Math.3PI/2);
+malla1.rotateX( Math.(PI/2)*5);
 var escena1 = new THREE.Scene();
 escena1.add(malla1);
 
