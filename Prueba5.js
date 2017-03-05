@@ -1,3 +1,15 @@
+var ctx = new THREE.Shape();
+ctx.arc(0,0,1.5,0,2*Math.PI);
+var forma1 = new THREE.ExtrudeGeometry(figura,{amount:10} );
+var material1 = new THREE.MeshNormalMaterial();
+var malla1 = new THREE.Mesh( forma1, material1 );
+malla1.rotateX( Math.PI/6);
+var escena1 = new THREE.Scene();
+escena1.add(malla1);
+
+var camara = new THREE.PerspectiveCamera();
+camara.position.z = 100;
+
 var figura = new THREE.Shape();
 
 //figura.moveTo(0, 0);
@@ -12,7 +24,7 @@ var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-//malla.rotateX( Math.PI/6);
+malla.rotateX( Math.PI/6);
 
 var escena = new THREE.Scene();
 escena.add(malla);
