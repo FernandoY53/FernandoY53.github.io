@@ -1,6 +1,6 @@
 var ctx = new THREE.Shape();
 ctx.arc(0,0,1.5,0,2*Math.PI);
-var forma1 = new THREE.ExtrudeGeometry(figura,{amount:10} );
+var forma1 = new THREE.ExtrudeGeometry(figura,{amount: 20} );
 var material1 = new THREE.MeshNormalMaterial();
 var malla1 = new THREE.Mesh( forma1, material1 );
 malla1.rotateX( Math.PI/6);
