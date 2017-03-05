@@ -13,12 +13,12 @@ camara.position.z = 100;
 var figura = new THREE.Shape();
 
 //figura.moveTo(0, 0);
-figura.lineTo(0, 3);          //A
-figura.lineTo(2.6, 1.5);      //B
-figura.lineTo(2.6, -1.5);     //C
-figura.lineTo(0, -3);         //D
-figura.lineTo(-2.6, -1.5);    //E
-figura.lineTo(-2.6, 1.5);     //F
+figura.lineTo(0, 4);          //A
+figura.lineTo(3.6, 2.5);      //B
+figura.lineTo(3.6, -2.5);     //C
+figura.lineTo(0, -4);         //D
+figura.lineTo(-3.6, -2.5);    //E
+figura.lineTo(-3.6, 2.5);     //F
 
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
