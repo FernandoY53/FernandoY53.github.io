@@ -1,21 +1,3 @@
-//PICO
-//var pico = new THREE.Shape();
-
-//pico.moveTo(33,60);
-//pico.lineTo(35,50);
-//pico.lineTo(37,60);
-
-//var forma1 = new THREE.ExtrudeGeometry( pico,{amount: 12} );
-//var material1 = new THREE.MeshLambertMaterial({color: 0xFA8815});
-//var malla1 = new THREE.Mesh( forma1, material1 );
-
-//malla1.rotateY( Math.PI/6);
-//var escena1 = new THREE.Scene();
-//escena1.add(malla1);
-
-//var camara1 = new THREE.PerspectiveCamera();
-//camara1.position.z = 200;
-
 //CUERPO
 var figura = new THREE.Shape();
 
@@ -45,7 +27,7 @@ figura.lineTo(15, 40);    //21
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
 
-var material = new THREE.MeshLambertMaterial({color: 0xCFE011});
+var material = new THREE.MeshBasicMaterial({color: 0xCFE011});
 var malla = new THREE.Mesh( forma, material );
 malla.rotateY( Math.PI/6);
 
