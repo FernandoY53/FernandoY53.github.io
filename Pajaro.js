@@ -27,7 +27,7 @@ figura.lineTo(15, 40);    //21
 var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
 
-var material = new THREE.MeshNormalMaterial();
+var material = new THREE.MeshNormalMaterial({color: 0xCFE011});
 var malla = new THREE.Mesh( forma, material );
 malla.rotateY( Math.PI/6);
 
