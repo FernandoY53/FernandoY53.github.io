@@ -56,14 +56,15 @@ var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-malla.rotateY( Math.PI/6);
+//malla.rotateY( Math.PI/6);
 
 var escena = new THREE.Scene();
 escena.add(malla);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 300;
+camara.position.z = 200;
 camara.position.y = 60;
+camara.position.x = 20;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
