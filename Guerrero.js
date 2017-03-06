@@ -30,7 +30,7 @@ figura.lineTo(85, 83);    //26
 figura.lineTo(85, 84);    //27
 figura.lineTo(84, 84);    //28
 figura.lineTo(86, 110);    //29
-figura.lineTo(79.5, 120);    //30
+figura.lineTo(81.5, 120);    //30
 figura.lineTo(77, 110);    //31
 figura.lineTo(79, 84);    //32
 figura.lineTo(78, 84);    //33
@@ -64,7 +64,7 @@ escena.add(malla);
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 200;
 camara.position.y = 60;
-camara.position.x = 20;
+camara.position.x = 40;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
