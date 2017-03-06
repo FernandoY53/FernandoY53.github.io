@@ -6,8 +6,8 @@ figura.lineTo(15, 45);    //2
 figura.lineTo(25, 95);    //3
 figura.lineTo(25, 70);    //4
 figura.lineTo(30, 70);    //5
-figura.lineTo(30, -100);    //6
-figura.lineTo(35, -100);    //7
+figura.lineTo(30, -10);    //6
+figura.lineTo(35, -10);    //7
 figura.lineTo(35, 70);    //8
 figura.lineTo(45, 70);    //9
 figura.lineTo(45, -10);    //10
