@@ -9,6 +9,7 @@ forma.vertices.push( new THREE.Vector3( 0,  10,  0 ) ); // Vértice 4
 forma.vertices.push( new THREE.Vector3( 0,  -10,  0 ) ); // Vértice 5
 forma.vertices.push( new THREE.Vector3( 5,  0,  0) ); // Vértice 6
 forma.vertices.push( new THREE.Vector3( -5,  0,  0 ) ); // Vértice 7
+forma.vertices.push( new THREE.Vector3( 0, 10, -5) ); // Cara 5
 
 forma.faces.push( new THREE.Face3( 3, 2, 1 ) ); // Cara 0
 forma.faces.push( new THREE.Face3( 3, 1, 0 ) ); // Cara 1
