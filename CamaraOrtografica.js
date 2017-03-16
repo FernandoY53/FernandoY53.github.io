@@ -1,6 +1,6 @@
 //Camara Ortografica
 
-var camara =new three.OrthographicCamara();
+var camara =new THREE.OrthographicCamara();
 
 camara.left = window=innerWidth /-2;
 camara.right = window=innerWidth /2;
@@ -17,12 +17,12 @@ var cubo = new THREE.Mesh(new THREE.BoxGeometry(30,30,30),
 cubo.rotateY(Math.PI/4);
 
 var esfera1 = new THREE.Mesh(	new THREE.SphereGeometry(15),
-				newTHREE.MesNormalMaterial());
+				new THREE.MesNormalMaterial());
 esfera1.position.x=50;
 
 
 var esfera2 = new THREE.Mesh(	new THREE.SphereGeometry(15),
-				newTHREE.MesNormalMaterial());
+				new THREE.MesNormalMaterial());
 esfera2.position.x=-50;
 esfera2.position.z=-100;
 
