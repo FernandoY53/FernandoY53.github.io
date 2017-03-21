@@ -6,5 +6,21 @@ function setup(){
   camara.position.z = 5;
   
   renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeigth);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
+  
+  malla = new THREE.Mesh(new THREE.SphereGeometry(1),new THREE.MeshNormalMaterial());
+                         escena.add(malla);
+}
+function loop (){
+  requestAnimationFrame(loop);
+  
+  malla.rotation.x += 0.01;
+  malla.rotation.y += 0.01;
+  renderer.render(escena, camara);
+}
+
+var malla, camara, renderer, escena;
+
+setup();
+loop();
