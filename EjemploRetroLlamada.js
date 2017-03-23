@@ -1,4 +1,4 @@
-var listener = function (){
+function listener (){
   camara.aspect = window.innerWidth / window.innerHeight;
   camara.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
