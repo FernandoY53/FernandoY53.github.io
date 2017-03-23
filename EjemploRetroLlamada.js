@@ -4,7 +4,7 @@ function listener (){
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 function push (e){
-  if(e.keyCode===65)
+  if(e.keyCode===69)
     camara.position.z++;
   else if(e.keyCode===90)
     camara.position.z--;
@@ -30,7 +30,7 @@ function setup(){
 function loop(){
   requestAnimationFrame(loop);
   
-  malla.rotation.x +=0.01;
+  malla.rotation.x += 0.01;
   malla.rotation.y += 0.01;
   
   renderer.render(escena, camara);
