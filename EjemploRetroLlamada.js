@@ -3,6 +3,14 @@ function listener (){
   camara.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
+function push (e){
+  if(e.keyCode===65)
+    camara.position.z++;
+  else if(e.keyCode===90)
+    camara.position.z--;
+}
+window.addEventListener('keypress',push,false);
+
 function setup(){
   escena = new THREE.Scene();
   camara = new  THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
