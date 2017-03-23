@@ -1,7 +1,7 @@
 var listener = function (){
   camara.aspect = window.innerWidth / window.innerHeight;
   camara.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window,innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
 }
 function setup(){
   escena = new THREE.Scene();
@@ -9,13 +9,13 @@ function setup(){
   camara.position.z = 5;
   
   renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth. window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
                             
-  malla = new THREE.Mesh(new THREE.Sphere(1), new THREE.MeshNormalMaterial()));
+  malla = new THREE.Mesh(new THREE.Sphere(1), new THREE.MeshNormalMaterial());
   escena.add(malla);
   
-  var tipoEcento = 'rezise';
+  var tipoEvento = 'rezise';
   var capturar = false;
   window.addEventListener(tipoEvento, listener, capturar);
 }
