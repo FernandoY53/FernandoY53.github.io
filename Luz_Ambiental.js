@@ -3,7 +3,7 @@ var iluminacion = new THREE.AmbientLight(0xFFFFFF);
 var forma = new THREE.SphereGeometry(1);
 var material = new THREE.Scene();
 escena.add(malla);
-escena.edd(iluminacion);
+escena.add(iluminacion);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 5;
