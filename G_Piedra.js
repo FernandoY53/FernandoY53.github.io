@@ -1,7 +1,4 @@
 function setup() {
-	THREE.ImageUtils.crossOrigin = '';
-	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Piedra.jpg');
-	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
   //CUERPO GUERRERO
   var figura = new THREE.Shape();
@@ -55,6 +52,10 @@ function setup() {
   figura.lineTo(35, 79);    //47
   figura.lineTo(25, 79);    //48
   figura.lineTo(10, 67);    //49
+	
+	THREE.ImageUtils.crossOrigin = '';
+	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Piedra.jpg');
+	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
   var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
 
