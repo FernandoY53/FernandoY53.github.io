@@ -27,8 +27,9 @@ function setup() {
 
 	THREE.ImageUtils.crossOrigin = '';
 	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Plumas.jpg');
-	textura.minFilter = THREE.LinearMipMapNearestFilter;
+	textura.minFilter = THREE.LinearFilter;
 	textura.magFilter = THREE.LinearFilter;
+	log.innerHTML="Filtros Min: Linar, Mag: Linar";
 	textura.needsUpdate = true;
 	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
