@@ -29,6 +29,7 @@ function setup() {
 	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Plumas.jpg');
 	textura.minFilter = THREE.LinearMipMapNearestFilter;
 	textura.magFilter = THREE.LinearFilter;
+	textura.needsUpdate = true;
 	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
   	var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
