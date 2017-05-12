@@ -27,6 +27,7 @@ function setup() {
 
 	THREE.ImageUtils.crossOrigin = '';
 	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Plumas.jpg');
+	textura.minFilter = THREE.NearestFilter;
 	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
   	var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
