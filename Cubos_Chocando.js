@@ -8,6 +8,9 @@ function setup(){
   
   camara = new THREE.PerspectiveCamera();
   camara.position.z = 5;
+	
+  raycaster = new THREE.Raycaster();
+  raycaster.setFromCamera(	new THREE.Vector2(0,0), camara);
   
   escena = new THREE.Scene();
   escena.add(cubo1);
@@ -22,19 +25,22 @@ function setup(){
 }
 
 function loop(){
-	var step = 0.01;
+	var intersects = raycaster.intersectObjects(	escena.children);
+	if (intersects.length > 0) step = -step;
+	//var step = 0.01;
 	
 	cubo1.rotation.x += step;
 	cubo1.rotation.y += step;
   
-  cubo2.rotation.x += step;
+  	cubo2.rotation.x += step;
 	cubo2.rotation.y += step;
 
 	renderer.render(escena, camara);
-  requestAnimationFrame(loop);
+  	requestAnimationFrame(loop);
 }
 
 var cubo1, cubo2, escena, camara, renderer;
+var raycaster, step;
 setup();
 loop();
   
