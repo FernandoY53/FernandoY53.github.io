@@ -19,5 +19,23 @@ function setup(){
                     window.innerHeight*.95);
                     
   document.body.appendChild(  renderer.domElement);
+}
+
+function loop(){
+	var step = 0.01;
+	
+	cubo1.rotation.x += step;
+	cubo1.rotation.y += step;
+  
+  cubo2.rotation.x += step;
+	cubo2.rotation.y += step;
+
+	renderer.render(escena, camara);
+  requestAnimationFrame(loop);
+}
+
+var cubo1, cubo2, escena, camara, renderer;
+setup();
+loop();
   
   
