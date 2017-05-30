@@ -54,7 +54,7 @@ function setup() {
   	figura.lineTo(10, 67);    //49
 
 	THREE.ImageUtils.crossOrigin = '';
-	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Piedra.jpg');
+	var textura 	= THREE.ImageUtils.loadTexture('FernandoY53.github.io/Piedra2.jpg');
 	var material 	= new THREE.MeshBasicMaterial({map: textura});
 
   	var forma = new THREE.ExtrudeGeometry( figura,{amount: 10} );
