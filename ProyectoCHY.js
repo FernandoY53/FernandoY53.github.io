@@ -8,11 +8,11 @@ var raycaster1,raycaster2,raycaster3,raycaster4,raycaster5,raycaster6;
 
 
 //texturas
-var m1 = new THREE.ImageUtils.loadTexture('https://JorchJorch95.github.io/brick_bump.jpg');
-var m2 = new THREE.ImageUtils.loadTexture('https://JorchJorch95.github.io/brick_diffuse.jpg');
-var m3 = new THREE.ImageUtils.loadTexture('https://JorchJorch95.github.io/brick_roughness.jpg');
-var canasta = new THREE.ImageUtils.loadTexture('https://JorchJorch95.github.io/canasta.jpg');
-var metal = new THREE.ImageUtils.loadTexture('https://JorchJorch95.github.io/metal2.jpg');
+var m1 = new THREE.ImageUtils.loadTexture('https://FernandoY53.github.io/brick_bump.jpg');
+var m2 = new THREE.ImageUtils.loadTexture('https://FernandoY53.github.io/brick_diffuse.jpg');
+var m3 = new THREE.ImageUtils.loadTexture('https://FernandoY53.github.io/brick_roughness.jpg');
+var canasta = new THREE.ImageUtils.loadTexture('https://FernandoY53.github.io/canasta.jpg');
+var metal = new THREE.ImageUtils.loadTexture('https://FernandoY53.github.io/metal2.jpg');
 
 
 
